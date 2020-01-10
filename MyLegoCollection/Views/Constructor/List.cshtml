@@ -1,0 +1,18 @@
+﻿@model ConstructorsListViewModel
+
+<h1>@Model.CurrentTheme</h1>
+@foreach (var constructor in Model.Constructors)
+{
+    <div class="col-sm-4 col-lg-4 col-md-4">
+        <div class="thumbnail">
+            <img src="@constructor.ImageThumbnailUrl" alt="" />
+            <div class="caption">
+                <h3 class="pull-right">@constructor.Price.ToString("c")</h3>
+                <h3>
+                    <a>@constructor.Name</a>
+                </h3>
+                <p>@constructor.ShortDescription</p>
+            </div>
+        </div>
+    </div>
+}
