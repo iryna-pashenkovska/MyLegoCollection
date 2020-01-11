@@ -7,7 +7,7 @@ namespace MyLegoCollection.Models
 {
     public class Constructor
     {
-        public int SetId { get; set; }
+        public int ConstructorId { get; set; }
         public string Name { get; set; }
         public string ShortDescription { get; set; }
         public string LongDescription { get; set; }
